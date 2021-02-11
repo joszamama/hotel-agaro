@@ -1,0 +1,128 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family:Helvetica; color: black;
+	width: 100%;
+	font-family:Helvetica;
+}
+
+.container{
+	display:grid;
+	grid-template-areas:"header"
+						"tabla1"
+						"tabla2"
+						"tabla3"
+						"tabla4"
+						"tabla5"
+						"tabla6"
+						"tabla7";
+
+}
+
+.header{
+	grid-area:header;
+}
+.tabla1, .tabla2, .tabla3, .tabla4, .tabla5, .tabla6, .tabla7{
+	margin-left:5%;
+	margin-right:5%;
+
+}
+
+.tabla1{
+	grid-area:tabla1;
+}
+
+.tabla2{
+	grid-area:tabla2;
+}
+
+.tabla3{
+	grid-area:tabla3;
+}
+
+.tabla4{
+	grid-area:tabla4;
+}
+
+.tabla5{
+	grid-area:tabla5;
+}
+
+.tabla6{
+	grid-area:tabla6;
+}
+
+.tabla7{
+	grid-area:tabla7;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+ 	border: 1.5px solid black;
+ 	text-align: left;
+ 	padding: 8px;
+ 	background-color: #af8d2a;
+}
+
+td{
+	border: 1px solid black;
+ 	text-align: left;
+ 	padding: 5px;
+}
+
+tr:nth-child(odd) {
+ 	background-color: #CFCFCF;
+}
+
+tr:nth-child(even) {
+ 	background-color: white;
+}
+
+#addCamareros {
+	height:30px;
+	width:30px;
+}
+
+#add{
+	border:none;
+	background-color:white;
+	float:right;	
+	margin-right:12%;	
+}
+#guardar{
+	margin-left:5%;
+}
+
+#guardarCamareros{
+	height:30px;
+	width:30px;
+}
+
+#tablaAddCamareros, #tablaModCamareros{
+	width:90%;
+}
+
+#editCamareros {
+	width: 20px;
+	height: 20px;
+}
+
+#edit, #delete{
+	border:none;
+	background-color:white;
+}
+#editCamareros {
+	width: 20px;
+	height: 20px;
+}
+
+#filaBotones{
+	background-color: white;
+	border:none;
+}

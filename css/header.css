@@ -1,0 +1,63 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family:Helvetica; color: black;
+	width: 100%;
+}
+
+.header{
+	display:grid;
+	grid-template-columns:repeat(2,auto);
+	grid-template-areas:"logoHotel		navegacionHotel"
+						"tituloPag		tituloPag";		
+	min-height:300px;
+}
+
+.logoHotel{
+	grid-area:logoHotel;
+}
+
+.navegacionHotel{
+	grid-area:navegacionHotel;
+}
+
+.tituloPag{
+	grid-area:tituloPag;
+	color:#af8d2a;
+	letter-spacing:2px;
+	font-size:2em;
+	text-align: center;
+	-webkit-text-stroke:1px  black;
+}
+
+.imagenLogo{
+	height:8em;
+    width:8em;
+    margin-left:7%;
+	border:2px solid;
+	border-color:black;
+	margin-top:20%;
+}
+
+.navegacion li{
+	display: inline-block;
+	border:solid;
+	border-color:black;
+	margin-top:5%;
+}
+
+.navegacion li a{
+	background-color: white;
+	display:block;
+	text-decoration:none;
+	padding:1em 4.5em;
+	color:black;
+}
+
+.navegacion li a:hover{
+	background-color: #52b6de;
+}
+
+.navegacion li a:active{
+	color: black;
+}

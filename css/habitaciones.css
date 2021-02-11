@@ -1,0 +1,321 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    width: 100%;
+	font-family:Helvetica;
+
+}
+
+.container{
+    display:grid;
+    grid-template-areas:"header"
+    					"titulo"
+                        "cuerpo"
+                        "pieDePagina";
+   gap:20px;
+}
+
+.header{
+    grid-area:header;
+}
+
+.pieDePagina{
+	grid-area:pieDePagina;
+}
+.titulo{
+	grid-area:titulo;
+	display:flex;
+	justify-content:center;
+}
+
+
+.cuerpo{
+	grid-area: cuerpo;
+	display: grid;
+	grid-template-areas: "habitacion1"
+						 "habitacion2"
+						 "habitacion3"
+						 "habitacion4"
+						 "habitacion5"
+						 "habitacion6";
+	grid-gap: 20px;
+	
+}
+
+
+
+
+.descripcion1, .descripcion2, .descripcion3, .descripcion4, .descripcion5, .descripcion6{
+	text-align:justify;
+}
+
+.habitacion1 {
+	grid-area: habitacion1;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab1 descripcion1";
+
+}
+
+.hab1{
+	grid-area: hab1;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+	
+
+}
+
+.descripcion1 {
+	display:grid;
+	grid-area:descripcion1;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.tituloDesc{
+	grid-area:tituloDesc;
+}
+
+.botonReservar{
+	grid-area:botonReservar;
+}
+
+.desc{
+	grid-area:desc;
+}
+
+.habitacion2 {
+	grid-area: habitacion2;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab2 descripcion2";
+	background-color:#f8f8f8;
+}
+
+.hab2{
+	grid-area: hab2;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+
+}
+
+.descripcion2 {
+	display:grid;
+	grid-area:descripcion2;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.habitacion3 {
+	grid-area: habitacion3;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab3 descripcion3";
+}
+
+.hab3{
+	grid-area: hab3;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+
+}
+
+.descripcion3 {
+	display:grid;
+	grid-area:descripcion3;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.habitacion4 {
+	grid-area: habitacion4;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab4 descripcion4";
+	background-color:#f8f8f8;
+}
+
+.hab4{
+	grid-area: hab4;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+
+}
+
+.descripcion4 {
+	display:grid;
+	grid-area:descripcion4;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.habitacion5 {
+	grid-area: habitacion5;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab5 descripcion5";
+}
+
+.hab5{
+	grid-area: hab5;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+
+}
+
+.descripcion5 {
+	display:grid;
+	grid-area:descripcion5;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.habitacion6 {
+	grid-area: habitacion6;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "hab6 descripcion6";
+	background-color:#f8f8f8;
+
+}
+
+.hab6{
+	grid-area: hab6;
+	width: 90%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	margin-left:3%;
+
+}
+
+.descripcion6 {
+	display:grid;
+	grid-area:descripcion6;
+	grid-template-columns:repeat(2, auto);
+	grid-template-areas:"tituloDesc"
+						"desc"
+						"botonReservar";
+	gap:5px;
+	margin:auto;
+	margin-right:3%;
+}
+
+.tarjeta {
+	margin:40px 0;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.botonReserva{
+	color: black;
+	font-size: 1em;
+	padding: 0.5em;
+	text-align: center;
+	width: 6em;
+	border: 1.5px solid;
+	text-decoration: none;
+	float:right;
+	margin-top:3%;
+	box-shadow:black 2px 2px 5px;
+}
+
+.botonReserva:active{
+	-webkit-transform: scale(0.95);
+}
+
+
+#precioNoche{
+	padding: 12px;
+	float: right;
+	margin-right: 1%;
+	font-weight: bold;
+}
+
+/* --------------------------------------- */
+/* ----- Slider Banner */
+/* --------------------------------------- */
+
+.slider_banner {
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider_banner .banner {
+	position: relative;
+	width: 100%; 
+}
+
+.slider_banner .banner img {
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.slider_banner .flecha-banner {
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top:50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover {
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .flecha-banner.anterior {left: 20px;}
+.slider_banner .flecha-banner.siguiente {right: 20px;}

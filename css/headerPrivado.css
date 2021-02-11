@@ -1,0 +1,78 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family:Helvetica; color: black;
+	width: 100%;
+	font-family:Helvetica;
+}
+
+.header{
+	display:grid;
+	grid-template-columns:1fr 5fr;
+	grid-template-areas:"cerrarSesion	cerrarSesion"
+						"logoPrivado	navegacionPriv";
+}
+
+.cerrarSesion{
+	grid-area:cerrarSesion;
+}
+
+.logoPrivado{
+	grid-area:logoPrivado;margin:auto;
+}
+
+#imagenLogoPrivado{
+	height:8em;
+    width:8em;
+	
+	
+}
+.navegacionPriv{
+	grid-area:navegacionPriv;
+	margin-top:2%;
+}
+
+
+#navegacionPrivada li {
+	display: inline-block;
+	border:solid;
+	border-color:black;
+	
+}
+
+#navegacionPrivada li a{
+	background-color: #CFCFCF;
+	display:block;
+	text-decoration:none;
+	padding:0.5em 0.5em;
+	color:black;
+	
+}
+
+#navegacionPrivada li a:hover{
+	background-color: #af8d2a;
+}
+
+#navegacionPrivada li a:active{
+	color: black;
+}
+
+#cerrarSesionPrivado{
+	display:block;
+	background-color:#CFCFCF;
+	float:right;
+	margin-top:1%;
+	margin-right:5%;
+	padding:1px;
+	width:7em;
+	border:1.5px black solid;
+	font-size:1em
+	text-decoration:none;
+	color:black;
+}
+
+#cerrarSesionPrivado:active{
+	-webkit-transform:scale(0.95);
+	background-color: #CFCFCF;
+	-webkit-transition: 0.1s;
+}
